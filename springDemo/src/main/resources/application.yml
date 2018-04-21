@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springDemo?useSSL=true
+    username: root
+    password: 861153
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 100MB

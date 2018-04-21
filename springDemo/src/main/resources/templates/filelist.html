@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scaleable=no" charset="UTF-8">
+    <title>filelist</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<div class="container">
+    <div class="row text-center" style="margin-top: 20px;">
+        <div class="col-xs-6 col-sm-4">
+            <h3>下载</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-4">
+            <ul class="list-group text-center" th:each="name:${fileName}">
+                <li class="list-group-item" ><a th:href="${name}" th:text="${name}"> fileName</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
